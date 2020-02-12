@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<title>Программа питания для вашего питомца</title>
+</head>
+<body>
+	<section class="nutrition">
+<!--  предположил, что форма является частью страници, поэтому загнал целиком в section -->
+		<form action="#" method="post">
+			<h2 class="nutrition__title">Подбор программы</h2>
+			<p class="nutrition__text nutrition__text_lead">Заполните анкету и мы подберем программу питания для вашего кота</p>
+
+<!-- Блок "Информация о питомце" -->
+			<div class="pet">
+					<fieldset class="pet__items_info nutrition__text">
+					
+						<label for="pet__info_name" class="pet__items pet__label">Имя:*
+							<input type="text" class="nutrition__input-field nutrition__text" name="pet__name" required placeholder="Барсик"></label>
+							
+						<label for="pet__info_weight" class="pet__items pet__label">Вес (кг):*
+							<input type="text" class="nutrition__input-field nutrition__text" name="pet__info_weight" required placeholder="7"></label>
+							
+						<label for="pet__info_age" class="pet__items pet__label">Возраст (лет):*
+							<input type="text" class="nutrition__input-field nutrition__text" name="pet__info_age" placeholder="7"></label>
+					</fieldset>
+					
+					<fieldset class="pet__items_goal nutrition__text">
+					
+						<input id="loseWeight" type="radio" class="pet__radio" name="goal" checked>
+						<label for="loseWeight" class="pet__items pet__label pet__label_radio">Похудение</label>
+						
+						<input id="getWeight" type="radio" class="pet__radio" name="goal">
+						<label for="getWeight" class="pet__items pet__label pet__label_radio">Набор массы</label>
+						
+						<input id="needAdvice" type="radio" class="pet__radio" name="goal">
+						<label for="needAdvice" class="pet__items pet__label pet__label_radio">Не знаю (нужен ваш совет)</label>
+						
+					</fieldset>
+				</div>
+
+<!-- Блок "Контакты владельца" -->
+			<div class="nutrition__separator"></div>
+				<fieldset class="owner-contacts">
+					<legend class="nutrition__subtitle">Контактные данные (владельца кота)</legend>
+				<!-- flex и grid не работают с fieldset, поэтому завернул в div  -->
+					<div class="owner-contacts__items nutrition__text">
+						<label for="eMail" class="owner-contacts__label">E-mail:*
+							<input type="email" class="nutrition__input-field nutrition__text field-ico" name="eMail" required placeholder="kuklachev@gmail.com">
+						</label>
+						<label for="phoneNumber" class="owner-contacts__label">Телефон:*
+							<input type="tel" class="nutrition__input-field nutrition__text field-ico" name="phoneNumber" required placeholder="8 (960) 900-60-90">
+						</label>
+					</div>
+				</fieldset>
+			
+<!-- Блок "Комментарий" -->
+			<div class="nutrition__separator"></div>
+			<fieldset class="comment">
+			<legend class="nutrition__subtitle">Комментарий</legend>
+				<textarea name="comment" id="" rows="5" class="comment__textarea nutrition__text" placeholder="Расскажите обо всех повадках кота"></textarea>
+			</fieldset>
+			
+<!-- Блок "Дополнительно" -->
+		<div class="nutrition__separator"></div>
+			<fieldset class="additionaly">
+				<legend class="nutrition__subtitle">Дополнительно</legend>
+				<!-- flex и grid не работают с fieldset, поэтому завернул в div  -->
+				<div class="additionaly__items">
+				
+					<input id="sweetener" type="checkbox" name="additionaly" class="additionaly__checkbox" checked>
+					<label for="sweetener" class="additionaly__label nutrition__text">Сахарозаменитель</label>
+					
+					<input id="water" type="checkbox" name="additionaly" class="additionaly__checkbox">
+					<label for="water" class="additionaly__label nutrition__text">Питьевая вода</label>
+					
+					<input id="milk" type="checkbox" name="additionaly" class="additionaly__checkbox">
+					<label for="milk" class="additionaly__label nutrition__text">Молоко</label>
+					
+					<input id="vitamins" type="checkbox" name="additionaly" class="additionaly__checkbox">
+					<label for="vitamins" class="additionaly__label nutrition__text">Витамины</label>
+				</div>
+			</fieldset>
+			
+<!-- Блок "Кнопа отправки" -->
+			<fieldset class="send-button">
+			<!-- flex и grid не работают с fieldset, поэтому завернул в div  -->
+				<div class="send-button__grid">
+					<input type="submit" class="send-button__input send-button_text">
+					<p class="understar-the-asterix">* &mdash; Обязательные поля</p>
+				</div>
+			</fieldset>
+		</form>
+	</section>
+</body>
+</html>
