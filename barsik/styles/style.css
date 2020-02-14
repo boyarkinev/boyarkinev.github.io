@@ -19,7 +19,7 @@ section, div, h2, p, fieldset {
 /* задали стиль для секции */
 
 .main__text {
-	font-family: 'Oswald', 'Arial Narrow', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 
 .main__text h2 {
