@@ -66,19 +66,25 @@ section, div, h2, p, fieldset, label {
 
 .input-field {
 	height: 52px;
-	border: 1px solid #cdcdcd;
 	margin-left: 20px;
 	padding: 0 16px;
 	box-sizing: border-box;
+	border-style: hidden;
 	display: flex;
 	flex: 1;
 }
 
-.input-field:focus {
-	outline-color: #68b738;
-	outline-width: medium;
+.input-field_frame {
+	border: 1px solid #ccc;
 }
 /* задали стиль полям ввода */
+
+.input-field_frame:focus {
+	outline-color: #68b738;
+	outline-width: medium;
+	box-shadow: 0 0 1px 1px #68b738;
+}
+/* задали стиль выделения рамки емэйл и тел для firefox */
 
 /* Блок заголовка*/
 .heading {
@@ -228,14 +234,20 @@ section, div, h2, p, fieldset, label {
 	margin: 0 40px 0 40px;
 	padding: 10px 20px;
 	box-sizing: border-box;
+	border-style: hidden;
 }
 
-.comment__textarea:focus {
+.comment__textarea_frame {
+	border: 1px solid #ccc;
+}
+/* задали стиль рамки для firefox */
+
+.comment__textarea_frame:focus {
 	outline-color: #68b738;
 	outline-width: medium;
-	-moz-outline-color: #68b738;
-	-moz-outline-width: medium;
+	box-shadow: 0 0 1px 1px #68b738;
 }
+/* задали стиль выделения рамки textarea для firefox */
 
 /* Блок "Дополнительно"*/
 .addit {
@@ -282,9 +294,8 @@ section, div, h2, p, fieldset, label {
 }
 
 .addit__checkbox:focus +.addit__label:before {
-	box-shadow: 0 0 2px 1px #68b738;
+	box-shadow: 0 0 1px 1px #68b738;
 }
-
 /* создали свой стиль чекбокса */
 
 .addit__checkbox:checked + .addit__label:before {
@@ -314,6 +325,7 @@ section, div, h2, p, fieldset, label {
 	margin: 0 80px 0 0;
 	cursor: pointer;
 	color: white;
+	outline-color: #68b738;
 }
 
 .send__button:hover {

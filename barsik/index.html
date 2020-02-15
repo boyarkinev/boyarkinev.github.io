@@ -7,7 +7,8 @@
 	<title>Программа питания для вашего питомца</title>
 </head>
 <body>
-<!-- предположил, что это блок в потоке на странице сайта, поэтому обернут в section и имеет h2 -->
+<!-- предположил, что это блок в потоке на странице сайта, 
+поэтому обернут в section и имеет h2 -->
 	<section class="main main__text">
 		<form action="#" method="post">
 			<div class="heading">
@@ -19,15 +20,15 @@
 			<div class="pet">
 				<fieldset class="pet__info">
 					<label for="petName" class="pet__label pet__label_text">Имя:*
-						<input type="text" class="input-field" name="pet_name" id="petName" required placeholder="Барсик">
+						<input type="text" class="input-field input-field_frame" name="pet_name" id="petName" required placeholder="Барсик">
 					</label>
 
 					<label for="petWeight" class="pet__label pet__label_text">Вес (кг):*
-						<input type="text" class="input-field" name="pet_weight" id="petWeight" required placeholder="7">
+						<input type="number" min="0" class="input-field input-field_frame" name="pet_weight" id="petWeight" required placeholder="7">
 					</label>
 
 					<label for="petAge" class="pet__label pet__label_text">Возраст (лет):*
-						<input type="text" class="input-field" name="pet_age" id="petAge" placeholder="7">
+						<input type="number" min="0" class="input-field input-field_frame" name="pet_age" id="petAge" placeholder="7">
 					</label>
 				</fieldset>
 
@@ -45,28 +46,25 @@
 
 <!-- Блок "Контакты владельца" -->
 			<div class="separator"></div>
-			
-				<fieldset class="contacts">
-					<legend>Контактные данные (владельца кота)</legend>
-					<div class="contacts__items">
-						<label for="eMail" class="contacts__label">E-mail:*
-						<input type="email" class="input-field field-ico" name="eMail" id="eMail" required placeholder="kuklachev@gmail.com"></label>
-						<label for="phoneNumber" class="contacts__label">Телефон:*
-						<input type="tel" pattern="8-[0-9]{3}-[0-9]{3}" class="input-field field-ico" name="phoneNumber" id="phoneNumber" required placeholder="8 (960) 900-60-90"></label>
-					</div>
-				</fieldset>
+			<fieldset class="contacts">
+				<legend>Контактные данные (владельца кота)</legend>
+				<div class="contacts__items">
+					<label for="eMail" class="contacts__label">E-mail:*
+					<input type="email" class="input-field input-field_frame field-ico" name="eMail" id="eMail" required placeholder="kuklachev@gmail.com"></label>
+					<label for="phoneNumber" class="contacts__label">Телефон:*
+					<input type="tel" class="input-field input-field_frame field-ico" name="phoneNumber" id="phoneNumber" required pattern="8-[0-9]{3}-[0-9]{3}" placeholder="8 (960) 900-60-90"></label>
+				</div>
+			</fieldset>
 			
 <!-- Блок "Комментарий" -->
 			<div class="separator"></div>
-			
 			<fieldset class="comment">
 				<legend>Комментарий</legend>
-				<textarea name="comment" id="comment" rows="5" class="comment__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+				<textarea name="comment" rows="5" class="comment__textarea comment__textarea_frame" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
 			</fieldset>
 			
 <!-- Блок "Дополнительно" -->
 			<div class="separator"></div>
-			
 			<fieldset class="addit">
 				<legend>Дополнительно</legend>
 				<input id="sweetener" type="checkbox" name="addit" class="addit__checkbox" checked>
