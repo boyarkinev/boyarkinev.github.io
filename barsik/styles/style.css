@@ -163,17 +163,15 @@ section, div, h2, p, fieldset, label {
 }
 /* создали свою радиокнопку */
 
-.pet__radio:focus +.pet__label_radio:before {
+.pet__radio:focus + .pet__label_radio:before {
 	box-shadow: 0 0 2px 1px #68b738;
 }
 /* добавили таб-подсветку к радиокнопкам */
 
 .pet__radio:checked + .pet__label_radio:before {
-    content: "";
 	background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8' standalone='yes'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:cc='http://web.resource.org/cc/' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd' xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape' version='1.1' baseProfile='full' width='18px' height='18px' viewBox='0 0 36 36' preserveAspectRatio='xMidYMid meet' id='svg_document' style='zoom: 16;'%3E%3C!-- Created with macSVG - https://macsvg.org/ - https://github.com/dsward2/macsvg/ --%3E%3Ctitle id='svg_document_title'%3EUntitled.svg%3C/title%3E%3Cdefs id='svg_document_defs'%3E%3C/defs%3E%3Cg id='main_group'%3E%3C/g%3E%3Ccircle stroke='none' transform='' id='circle1' stroke-width='3px' cy='18px' fill='%2368b738' r='18px' cx='18px'%3E%3C/circle%3E%3C/svg%3E");
 	background-repeat: no-repeat;
 	background-position: center;
-    text-align: center;
 }
 /* задали состояние радиокнопки после нажатия */
 
@@ -293,7 +291,7 @@ section, div, h2, p, fieldset, label {
 	margin-right: 20px;
 }
 
-.addit__checkbox:focus +.addit__label:before {
+.addit__checkbox:focus + .addit__label:before {
 	box-shadow: 0 0 1px 1px #68b738;
 }
 /* создали свой стиль чекбокса */
