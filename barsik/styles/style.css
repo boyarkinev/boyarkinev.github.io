@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap&subset=cyrillic');
 
+@font-face {
+	src: url('../fonts/Oswald.ttf') format("truetype");
+	font-family: 'Oswald';
+	font-style: normal; 
+	font-weight: normal;
+}
+
 /*
-section, div, h2, p, fieldset {
+section, div, h2, p, fieldset, label {
 	border: 1px solid red;
 }
 */
@@ -19,7 +26,7 @@ section, div, h2, p, fieldset {
 /* задали стиль для секции */
 
 .main__text {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Oswald', 'Arial Narrow', sans-serif;
 }
 
 .main__text h2 {
@@ -45,16 +52,6 @@ section, div, h2, p, fieldset {
 	color: #111;
 }
 
-.asterix {
-	width: 40%;
-	font-family: 'Arial';
-	font-size: 16px;
-	line-height: 16px;
-	color: #444;
-	border: 0;
-}
-/* задали стили для текста */
-
 .separator {
 	height: 3px;
 	background-color: #68b738;
@@ -65,7 +62,7 @@ section, div, h2, p, fieldset {
 	top: 19px;
 	z-index: -1;
 }
-/* задали стиль линии для разделения филдсетов */
+/* резиновая линия-разделитель */
 
 .input-field {
 	height: 52px;
@@ -73,6 +70,8 @@ section, div, h2, p, fieldset {
 	margin-left: 20px;
 	padding: 0 16px;
 	box-sizing: border-box;
+	display: flex;
+	flex: 1;
 }
 
 .input-field:focus {
@@ -81,17 +80,23 @@ section, div, h2, p, fieldset {
 }
 /* задали стиль полям ввода */
 
+/* Блок заголовка*/
 .heading {
 	margin: 70px 0;
 	padding: 0 110px;
 }
 /* задали стили для блока с заголовком и лидом */
 
+.main__text .lead {
+	width: 325px;
+	margin: 0;
+}
+
 /* Блок "Информация о питомце"*/
 .pet {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-column-gap: 100px;
+	grid-column-gap: 80px;
 	margin: 70px 110px;
 	padding: 0;
 }
@@ -120,13 +125,12 @@ section, div, h2, p, fieldset {
 .pet__label:last-child {
 	margin-bottom: 0;
 }
+/* убрали отступ у последнего в ряду элемента */
 
 .pet__label_text {
 	margin-bottom: 40px;
 }
 /* задали стиль заголовкам полей */	
-
-/* убрали отступ у последнего в ряду элемента */
 
 .pet__radio {
 	margin-right: 16px;
@@ -153,9 +157,14 @@ section, div, h2, p, fieldset {
 }
 /* создали свою радиокнопку */
 
+.pet__radio:focus +.pet__label_radio:before {
+	box-shadow: 0 0 2px 1px #68b738;
+}
+/* добавили таб-подсветку к радиокнопкам */
+
 .pet__radio:checked + .pet__label_radio:before {
     content: "";
-	background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8' standalone='yes'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:cc='http://web.resource.org/cc/' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd' xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape' version='1.1' baseProfile='full' width='24px' height='24px' viewBox='0 0 36 36' preserveAspectRatio='xMidYMid meet' id='svg_document' style='zoom: 16;'%3E%3C!-- Created with macSVG - https://macsvg.org/ - https://github.com/dsward2/macsvg/ --%3E%3Ctitle id='svg_document_title'%3EUntitled.svg%3C/title%3E%3Cdefs id='svg_document_defs'%3E%3C/defs%3E%3Cg id='main_group'%3E%3C/g%3E%3Ccircle stroke='none' transform='' id='circle1' stroke-width='3px' cy='18px' fill='%2368b738' r='18px' cx='18px'%3E%3C/circle%3E%3C/svg%3E");
+	background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8' standalone='yes'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:cc='http://web.resource.org/cc/' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd' xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape' version='1.1' baseProfile='full' width='18px' height='18px' viewBox='0 0 36 36' preserveAspectRatio='xMidYMid meet' id='svg_document' style='zoom: 16;'%3E%3C!-- Created with macSVG - https://macsvg.org/ - https://github.com/dsward2/macsvg/ --%3E%3Ctitle id='svg_document_title'%3EUntitled.svg%3C/title%3E%3Cdefs id='svg_document_defs'%3E%3C/defs%3E%3Cg id='main_group'%3E%3C/g%3E%3Ccircle stroke='none' transform='' id='circle1' stroke-width='3px' cy='18px' fill='%2368b738' r='18px' cx='18px'%3E%3C/circle%3E%3C/svg%3E");
 	background-repeat: no-repeat;
 	background-position: center;
     text-align: center;
@@ -182,17 +191,9 @@ section, div, h2, p, fieldset {
 .contacts__label {
 	display: flex;
 	align-items: center;
-	align-items: center;
-	/* задали стиль заголовкам полей */
+	 задали стиль заголовкам полей 
 }
 
-.contacts__label {
-	flex: 1;
-}
-
-.input-field {
-	flex: 1;
-}
 /* растянули поле ввода */
 
 .field-ico {
@@ -223,6 +224,7 @@ section, div, h2, p, fieldset {
 
 .comment__textarea {
 	width: calc(100% - 80px);
+	min-width: 570px;
 	margin: 0 40px 0 40px;
 	padding: 10px 20px;
 	box-sizing: border-box;
@@ -231,6 +233,8 @@ section, div, h2, p, fieldset {
 .comment__textarea:focus {
 	outline-color: #68b738;
 	outline-width: medium;
+	-moz-outline-color: #68b738;
+	-moz-outline-width: medium;
 }
 
 /* Блок "Дополнительно"*/
@@ -246,9 +250,9 @@ section, div, h2, p, fieldset {
 /* задали стили для блока "дополнительно" */
 .addit__label {
 	display: inline-block;
-	width: calc(25% - 80px);
-	margin: 0 40px;
-	padding: 0;
+	width: 249px;
+	margin: 0 0 0 40px;
+	padding: 0 20px 0 0;
 	cursor: pointer; /* задали состояние курсора */
 	position: relative;
 }
@@ -263,6 +267,7 @@ section, div, h2, p, fieldset {
 	appearance: none; /* скрыли оригинальные чекбоксы */
 	-webkit-appearance: none;
 	-moz-appearance: none;
+	margin: 0;
 }
 
 .addit__label:before {
@@ -275,6 +280,11 @@ section, div, h2, p, fieldset {
 	border: 1px solid #cdcdcd;
 	margin-right: 20px;
 }
+
+.addit__checkbox:focus +.addit__label:before {
+	box-shadow: 0 0 2px 1px #68b738;
+}
+
 /* создали свой стиль чекбокса */
 
 .addit__checkbox:checked + .addit__label:before {
@@ -309,3 +319,12 @@ section, div, h2, p, fieldset {
 .send__button:hover {
 	opacity: .5;
 }
+
+.send__asterix {
+	font-family: 'Arial';
+	font-size: 16px;
+	line-height: 16px;
+	color: #888;
+	border: 0;
+}
+/* задали стили для текста */
