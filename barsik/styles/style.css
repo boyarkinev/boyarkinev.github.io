@@ -197,8 +197,8 @@ section, div, h2, p, fieldset, label {
 .contacts__label {
 	display: flex;
 	align-items: center;
-	 задали стиль заголовкам полей 
 }
+/*	 задали стиль заголовкам полей */
 
 /* растянули поле ввода */
 
