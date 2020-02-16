@@ -14,7 +14,7 @@ section, div, h2, p, fieldset, label {
 */
 
 .main {
-	width: 1440px;
+	max-width: 1440px;
 	min-height: 1496px;
 	position: relative;
 	padding: 0;
@@ -49,6 +49,7 @@ section, div, h2, p, fieldset, label {
 	line-height: 36px;
 	background-color: white;
 	padding: 0 40px 0 40px;
+	margin-left: -40px;
 	color: #111;
 }
 
@@ -65,13 +66,14 @@ section, div, h2, p, fieldset, label {
 /* резиновая линия-разделитель */
 
 .input-field {
+	display: inline-block;
+	flex: 1;
+	min-width: 245px;
 	height: 52px;
-	margin-left: 20px;
+	margin: 10px 0 10px 20px;
 	padding: 0 16px;
 	box-sizing: border-box;
 	border-style: hidden;
-	display: flex;
-	flex: 1;
 }
 
 .input-field_frame {
@@ -110,6 +112,7 @@ section, div, h2, p, fieldset, label {
 
 .pet__info {
 	width: 100%;
+	min-width: 245px;
 	border: 0;
 	padding: 0;
 	margin: 0 auto;	
@@ -118,6 +121,7 @@ section, div, h2, p, fieldset, label {
 
 .pet__goal {
 	width: 100%;
+	min-width: 245px;
 	border: 1px solid #cdcdcd;
 	padding: 24px 0;
 }
@@ -134,7 +138,7 @@ section, div, h2, p, fieldset, label {
 /* убрали отступ у последнего в ряду элемента */
 
 .pet__label_text {
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 }
 /* задали стиль заголовкам полей */	
 
@@ -155,6 +159,7 @@ section, div, h2, p, fieldset, label {
 .pet__label_radio:before {
 	content: "";
 	width: 40px;
+	min-width: 40px;
 	height: 40px;
 	background-color: white;
 	border: 1px solid #cdcdcd;
@@ -178,18 +183,17 @@ section, div, h2, p, fieldset, label {
 /* Блок "Контакты владельца"*/
 .contacts {
 	width: 100%;
-	padding: 90px 70px;
+	padding: 90px 110px;
 	box-sizing: border-box;
 	border-style: none;
 	position: relative;
-	
 }
 
 .contacts__items {
-	margin: 0 40px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-column-gap: 80px;
+	margin: 0;
 }
 
 .contacts__label {
@@ -200,18 +204,18 @@ section, div, h2, p, fieldset, label {
 
 /* растянули поле ввода */
 
-.field-ico {
+.contacts__field-ico {
 	background-repeat: no-repeat;
 	background-position: right;
 	background-size: 24px;
 	background-origin: content-box;
 }
 
-.field-ico[type="email"] {
+.contacts__field-ico[type="email"] {
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' aria-hidden='true' focusable='false' width='1.15em' height='1em' style='-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);' preserveAspectRatio='xMidYMid meet' viewBox='0 0 1100 896'%3E%3Cpath d='M1023 168q1-3 1-6t-1-6l-2-6q-12-54-77-54H112q-30 0-57.5 11T13 137l-5 5q-10 11-7 26q-1 2-1 4v516q0 40 36 76t76 36h832q37 0 58.5-34t21.5-78V170.5l-1-2.5zm-911-8h832L512 505L81 161q8-1 31-1zm832 576H112q-9 0-20.5-8T72 708.5T64 688V230l427 341q9 8 21 8q12-1 21-8l427-341v462q0 44-16 44z' fill='%23767676'/%3E%3C/svg%3E");
 }
 
-.field-ico[type="tel"] {
+.contacts__field-ico[type="tel"] {
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' aria-hidden='true' focusable='false' width='1em' height='1em' style='-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);' preserveAspectRatio='xMidYMid meet' viewBox='0 0 1056 1056'%3E%3Cpath d='M1016 788q-4-4-25-18t-49-32.5l-56-37l-50-33l-28-17.5q-4-3-9.5-5t-11-3t-11.5-1q-4 0-7 .5t-6.5 1t-7.5 1.5t-7.5 2t-7 2.5t-7.5 3t-7 3.5q-19 10-91 51q-61-43-152-134q-90-90-133-151q41-73 51-91q26-50 5-83q-11-17-70.5-107T268 39q-17-24-52-24q-9 0-17.5 2t-17 5.5T165 31q-5 4-16.5 13t-37 30.5t-45.5 42t-36 45T15 204q1 42 15 88.5T68 385t53.5 91t66.5 90t71 82.5t72 75.5q59 59 118 109.5t128.5 99t141 77.5t134.5 31h1q17 0 41-16t44.5-36.5t42-45T1012 907l12-16q31-44 9-84q-7-12-17-19zm-44 65q-30 42-67 79.5T851 977q-90-5-212.5-81.5T376.5 679T160 416.5T79 205q6-17 43.5-54T202 84q2-2 4-3t4.5-1.5t5.5-.5q1 0 2 1q60 86 132 199q0 8-6 21q-2 3-5 9t-7.5 14t-10.5 18t-12.5 22t-14.5 26l-20 35l23 33q47 67 141 161t160 140l33 24l36-20q29-17 54-31.5t35-18.5q11-7 20-7h1q81 51 200 133q1 7-5 15zM700 398l275-273l-1 155q0 10 7 17t16 7h17q4 0 8.5-1.5t8-4.5t5-7t2.5-8V52l-.5-.5l-.5-.5l2-12q0-10-6-16q-3-3-7.5-5t-8.5-2l-12 1h-1l-229-1q-3 0-5.5.5t-5 2t-4.5 3t-3.5 3.5t-3 4.5t-2 5t-.5 5.5v16q1 11 9 17.5t18 6.5h151L655 353q-10 9-10 22.5t9.5 23t23 9.5t22.5-10z' fill='%23767676'/%3E%3C/svg%3E");
 }
 /* создали стиль иконки для полей емайла и телефона */
@@ -220,16 +224,16 @@ section, div, h2, p, fieldset, label {
 .comment {
 	width: 100%;
 	margin: 0;
-	padding: 90px 70px;
+	padding: 60px 110px;
 	box-sizing: border-box;
 	border-style: none;
 	position: relative;
 }
 
 .comment__textarea {
-	width: calc(100% - 80px);
-	min-width: 570px;
-	margin: 0 40px 0 40px;
+	width: 100%;
+	min-width: 245px;
+	margin: 0;
 	padding: 10px 20px;
 	box-sizing: border-box;
 	border-style: hidden;
@@ -253,31 +257,22 @@ section, div, h2, p, fieldset, label {
 	box-sizing: border-box;
 	border-style: none;
 	margin: 0;
-	padding: 60px 70px;
+	padding: 60px 110px;
 	position: relative;
 	display: inline-block;
 }
 /* задали стили для блока "дополнительно" */
 .addit__label {
 	display: inline-block;
-	width: 249px;
-	margin: 0 0 0 40px;
-	padding: 0 20px 0 0;
+	min-width: 245px;
+	width: auto;
+	padding: 0 0 0 0;
 	cursor: pointer; /* задали состояние курсора */
 	position: relative;
 }
 
 .addit__label:last-child {
 	margin-right: 0;
-}
-
-.addit__checkbox {
-	position: absolute;
-	padding: 0;
-	appearance: none; /* скрыли оригинальные чекбоксы */
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	margin: 0;
 }
 
 .addit__label:before {
@@ -288,7 +283,16 @@ section, div, h2, p, fieldset, label {
 	height: 40px;
 	background-color: white;
 	border: 1px solid #cdcdcd;
-	margin-right: 20px;
+	margin: 10px 20px 10px 0;
+}
+
+.addit__checkbox {
+	position: absolute;
+	appearance: none; /* скрыли оригинальные чекбоксы */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	margin: 0;
+	padding: 0;
 }
 
 .addit__checkbox:focus + .addit__label:before {
@@ -314,7 +318,8 @@ section, div, h2, p, fieldset, label {
 }
 
 .send__button {
-	width: 570px;
+	width: calc(50% - 40px);
+	min-width: 245px;
 	height: 52px;
 	background-color: #68b738;
 	transition: opacity 0.3s;
@@ -333,7 +338,7 @@ section, div, h2, p, fieldset, label {
 .send__asterix {
 	font-family: 'Arial';
 	font-size: 16px;
-	line-height: 16px;
+	line-height: 48px;
 	color: #888;
 	border: 0;
 }

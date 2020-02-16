@@ -47,15 +47,14 @@
 
 <!-- Блок "Контакты владельца" -->
 			<div class="separator"></div>
-			<fieldset class="contacts">
-				<legend>Контактные данные (владельца кота)</legend>
-				<div class="contacts__items">
-					<label for="eMail" class="contacts__label">E-mail:*
-					<input type="email" class="input-field input-field_frame field-ico" name="eMail" id="eMail" required placeholder="kuklachev@gmail.com"></label>
-					<label for="phoneNumber" class="contacts__label">Телефон:*
-					<input type="tel" class="input-field input-field_frame field-ico" name="phoneNumber" id="phoneNumber" required pattern="8-[0-9]{3}-[0-9]{3}" placeholder="8 (960) 900-60-90"></label>
-				</div>
-			</fieldset>
+				<fieldset class="contacts">
+					<legend>Контактные данные (владельца кота)</legend>
+					<div class="contacts__items">
+						<label for="eMail" class="contacts__label">E-mail:*<input type="email" class="input-field input-field_frame contacts__field-ico" name="eMail" id="eMail" required placeholder="kuklachev@gmail.com"></label>
+
+						<label for="phoneNumber" class="contacts__label">Телефон:*<input type="tel" class="input-field input-field_frame contacts__field-ico" name="phoneNumber" id="phoneNumber" required pattern="8-[0-9]{3}-[0-9]{3}" placeholder="8 (960) 900-60-90"></label>
+					</div>
+				</fieldset>
 			
 <!-- Блок "Комментарий" -->
 			<div class="separator"></div>
@@ -84,7 +83,7 @@
 <!-- Блок "Кнопа отправки" -->
 			<fieldset class="send">
 					<input type="submit" class="send__button" value="Отправить заявку">
-					<span class="send__asterix">* &mdash; Обязательные поля</span>
+					<span class="send__asterix">*&nbsp;&mdash;&nbsp;Обязательные поля</span>
 			</fieldset>
 		</form>
 	</section>
