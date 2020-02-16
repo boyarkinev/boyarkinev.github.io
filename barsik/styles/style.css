@@ -265,10 +265,11 @@ section, div, h2, p, fieldset, label {
 .addit__label {
 	display: inline-block;
 	min-width: 245px;
-	width: auto;
+/*	width: 245px;*/
 	padding: 0 0 0 0;
 	cursor: pointer; /* задали состояние курсора */
 	position: relative;
+	margin-right: 76px;
 }
 
 .addit__label:last-child {
