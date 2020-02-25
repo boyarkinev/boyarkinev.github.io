@@ -1,9 +1,0 @@
-@import url('__title/cover__title.css');
-@import url('__subtitle/cover__subtitle.css');
-@import url('__items/cover__items.css');
-@import url('cover-bg/cover-bg.css');
-
-.cover {
-    max-width: 1184px;
-    margin: 90px auto 82px;
-}
