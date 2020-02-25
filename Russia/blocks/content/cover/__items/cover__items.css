@@ -1,0 +1,15 @@
+.cover__items {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	position: relative;
+    color: #fff;
+    text-decoration: none;
+    background-color: black;
+    height: 594px;
+}
+
+.cover__items:hover .cover-bg {
+    opacity: .2;
+}

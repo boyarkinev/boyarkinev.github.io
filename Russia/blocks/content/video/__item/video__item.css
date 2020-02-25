@@ -1,0 +1,20 @@
+.video__item {
+	width: 583px;
+	height: 323px;
+	padding: 26px 30px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-end;
+	position: relative;
+	border-radius: 5px;
+	overflow: hidden;
+	background-color: black;
+    color: #fff;
+    text-decoration: none;
+}
+
+.video__item:hover .video__item-bg {
+    opacity: .2;
+}
