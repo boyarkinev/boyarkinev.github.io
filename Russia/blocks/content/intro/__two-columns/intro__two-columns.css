@@ -1,0 +1,6 @@
+.intro__two-columns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

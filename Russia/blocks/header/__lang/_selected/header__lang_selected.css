@@ -1,0 +1,11 @@
+.header__lang_selected {
+	color: #FFF;
+	box-sizing: border-box;
+	border-bottom: 2px solid #FFF;
+    padding: 0 0 2px;
+}
+
+.header__lang_selected:hover {
+	border-bottom: 2px solid rgba(255, 255, 255, .7);
+    transition-delay: .1s;
+}
