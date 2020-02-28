@@ -5,8 +5,10 @@
 @import url('__item-bg/additional__item-bg.css');
 
 .additional {
+/*
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+*/
 	margin: 106px auto;
 }

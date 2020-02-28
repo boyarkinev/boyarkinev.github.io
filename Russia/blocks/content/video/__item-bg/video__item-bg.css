@@ -3,6 +3,4 @@
 	top: 0;
 	left: 0;
 	object-fit: cover;
-    transition: opacity 0.3s ease-in-out;
-    opacity: .8;
 }

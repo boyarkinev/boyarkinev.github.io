@@ -4,6 +4,10 @@
 @import url('cover-bg/cover-bg.css');
 
 .cover {
+	display: flex;
+	flex-direction: column;
     max-width: 1184px;
+	width: 100%;
+	height: auto;
     margin: 90px auto 82px;
 }

@@ -1,4 +1,5 @@
 .place__pic {
+    max-width: 460px;
     width: 100%;
 	object-fit: cover;
 }

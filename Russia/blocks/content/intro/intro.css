@@ -8,7 +8,8 @@
 @import url('__quote-detale/intro__quote-detale.css');
 
 .intro {
-	width: 984px;
+	max-width: 984px;
+    width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
