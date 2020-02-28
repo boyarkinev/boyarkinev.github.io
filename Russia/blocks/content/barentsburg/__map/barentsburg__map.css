@@ -1,7 +1,6 @@
 .barentsburg__map {
-    max-width: inherit;
-	width: 100%;
+    width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
     margin: 40px auto;
 }

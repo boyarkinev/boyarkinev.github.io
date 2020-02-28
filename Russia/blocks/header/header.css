@@ -6,10 +6,9 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-    flex-wrap: wrap;
 	max-width: 1184px;
     width: 100%;
-	min-height: 52px;
+	height: 52px;
 	position: relative;
 	margin: 30px auto 0;
 }

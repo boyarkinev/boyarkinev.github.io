@@ -3,7 +3,6 @@
 @import url('__cover/lead__cover.css');
 @import url('__route-scheme/lead__route-scheme.css');
 @import url('__cover-caption/lead__cover-caption.css');
-@import url('__backgrnd/lead__backgrnd.css');
 
 .lead {
 	display: flex;
@@ -11,7 +10,4 @@
 	align-items: center;
 	text-align: center;
 	margin: 0 auto 80px;
-    max-width: 984px;
-    width: 100%;
-    height: auto;
 }

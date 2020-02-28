@@ -4,9 +4,8 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-/*	min-width: 1440px;*/
+	min-width: 1440px;
 	margin: 0 auto;
-    padding: 0 10px;
 	position: relative;
 	font-family: 'Inter', Arial, sans-serif;
 	background-color: #2A2C2F;

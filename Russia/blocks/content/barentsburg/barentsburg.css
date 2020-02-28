@@ -6,6 +6,6 @@
 @import url('__info/barentsburg__info.css');
 
 .barentsburg {
-    max-width: 1184px;
+    width: 1184px;
     margin: 76px auto 0;
 }

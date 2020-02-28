@@ -2,10 +2,15 @@
 @import url('__item/emblems__item.css');
 @import url('__city/emblems__city.css');
 @import url('__image/emblems__image.css');
-@import url('__items/emblems__items.css');
 
 .emblems {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 72px 36px;
 	margin: 82px auto 76px;
-	max-width: 1184px;
-	width: 100%;
+}
+
+.emblems :first-child {
+	grid-column: 1/6;
+	grid-row: 1/2;
 }

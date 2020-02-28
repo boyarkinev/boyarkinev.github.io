@@ -29,7 +29,7 @@
                 <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
                 <figure class="lead__cover">
                     <img class="lead__route-scheme" src="images/route.svg" alt="Маршрут">
-                    <img class="lead__backgrnd" src="images/kalegin-michail-179870-unsplash.jpg" alt="Ваша полка - верхняя" title="Ваша полка - верхняя">
+                    <img src="images/kalegin-michail-179870-unsplash.jpg" alt="Ваша полка - верхняя" title="Ваша полка - верхняя">
                     <figcaption class="lead__cover-caption">Ваша полка &mdash; верхняя</figcaption>
                 </figure>
             </section>
@@ -66,6 +66,8 @@
                 <img class="gallery__item" src="images/ergaki-sayany-krasnoyarsky-kray.jpg" alt="Ергаки. Саяны. Красноярский край" title="Ергаки. Саяны. Красноярский край">
             </section>
             <section class="places">
+
+                <!-- Куршская коса -->
                 <div class="place">
                     <h3 class="place__title">Куршская коса</h3>
                     <div class="place__website">
@@ -74,11 +76,15 @@
                     </div>
                     <img src="images/curonian-spit.jpg" alt="Куршская коса" title="Куршская коса" class="place__pic">
                     <div class="place__paragraphs">
+                    <!-- Можно лучше: (+)
+                        лучше задать обертке класс
+                    -->
                         <p class="place__paragraph">Здесь, посреди лесов и песчаных дюн, вы сможете увидеть два водных горизонта &mdash; спокойного Куршского залива с одной стороны и подёрнутого рябью волн Балтийского моря с другой. Уникальная природная зона на краю российского анклава.</p>
                         <p class="place__paragraph">На этом Калининградская область не заканчивается. Для путешественника и исследователя там же по соседству &mdash; самая западная точка России, Балтийская коса, &mdash; и немецкое наследие россыпи небольших приморских городов. Атмосфера здешних мест исключает суету, окуная в спокойствие природы и запах стального, прохладного моря.</p>
                     </div>
                 </div>
 
+                <!-- Кольский -->
                 <div class="place">
                     <h3 class="place__title">Кольский</h3>
                     <div class="place__website">
@@ -92,6 +98,7 @@
                     </div>
                 </div>
 
+                <!-- Алтай -->
                 <div class="place">
                     <h3 class="place__title">Алтай</h3>
                     <div class="place__website">
@@ -105,6 +112,7 @@
                     </div>
                 </div>
 
+                <!-- Байкал -->
                 <div class="place">
                     <h3 class="place__title">Зимний Байкал</h3>
                     <div class="place__website">
@@ -118,6 +126,7 @@
                     </div>
                 </div>
 
+                <!-- Карелия -->
                 <div class="place">
                     <h3 class="place__title">Карелия</h3>
                     <div class="place__website">
@@ -135,14 +144,14 @@
                 <h3 class="content-title">В глубины Земли и в дальний космос</h3>
                 <p class="content-subtitle">Видео от студии Stereotactic о местах в России, где ведутся фундаментальные исследования</p>
                 <div class="video__container">
-                    <a href="https://vimeo.com/81106671" target="_blank" class="video__item video__item-bg">
+                    <a href="https://vimeo.com/81106671" target="_blank" class="video__item">
                         <div class="video__icon"></div>
                         <p class="video__duration">6:30</p>
                         <h4 class="video__title">Colors of Kamchatka</h4>
                         <p class="video__subtitle">Director: Pavel Karykhalin</p>
                         <img src="images/colors-of-kamchatka.jpg" alt="Colors of Kamchatka" class="video__item-bg">
                     </a>
-                    <a href="https://vimeo.com/290675450" target="_blank" class="video__item video__item-bg">
+                    <a href="https://vimeo.com/290675450" target="_blank" class="video__item">
                         <div class="video__icon"></div>
                         <p class="video__duration">24:45</p>
                         <h4 class="video__title">Обсерватория | Observatory</h4>
@@ -210,15 +219,15 @@
                 </div>
             </section>
             <section class="cover">
-                <a href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank" class="cover__items cover-bg">
+                <a href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank" class="cover__items">
                     <h3 class="cover__title">До Байкала «на собаках»</h3>
                     <p class="cover__subtitle">По мотивам учебной темы о Транссибе и iframes &mdash; путешествие от столицы до Байкала на электричках.</p>
+                    <img class="cover-bg" src="images/cover.jpg" alt="Запасные пути">
                 </a>
             </section>
             <section class="emblems">
                 <h4 class="emblems__title">Природа на гербах
                     российских городов</h4>
-                <div class="emblems__items">
                 <figure class="emblems__item">
                     <img class="emblems__image" src="images/novgorod.png" alt="Великий Новгород">
                     <figcaption class="emblems__city">Великий Новгород</figcaption>
@@ -242,7 +251,6 @@
                     <img class="emblems__image" src="images/perm.png" alt="Пермь">
                     <figcaption class="emblems__city">Пермь</figcaption>
                 </figure>
-                </div>
             </section>
             <section class="barentsburg">
                 <h4 class="barentsburg__title">Баренцбург</h4>
@@ -283,3 +291,15 @@
 </body>
 
 </html>
+
+<!--Резюме по работе:
+
+    Отлично! Что осталось поправить:
+
+    - грид place менять не нужно было, теперь .place__paragraph уже чем были, и переносы сбились
+    Верните прошлый вариант (+)
+    
+    Комментарии "можно лучше" носят рекомендательный характер, их выполнение остается на Ваше усмотрение.
+    Комментарии "надо исправить" являются обязательными, только при выполнении всех "надо исправить" работа будет зачтена.
+
+-->
