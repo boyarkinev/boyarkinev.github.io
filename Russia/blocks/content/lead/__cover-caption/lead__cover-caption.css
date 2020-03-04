@@ -6,18 +6,17 @@
 	text-align: left;
 	margin-top: 10px;
 	width: 100%;
+	box-sizing: border-box;
 }
 
 @media screen and (max-width: 768px) {
 	.lead__cover-caption {
-		width: 94%;
-		margin: 0 auto;
+		padding: 0 24px;
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
 	.lead__cover-caption {
-		margin: 0 auto;
-		width: 90%;
+		padding: 0 16px;
 	}
 }

@@ -15,25 +15,26 @@
 	align-items: flex-start;
 	text-align: left;
 	margin: 0 auto 102px;
+	box-sizing: border-box;
 }
 
 @media screen and (max-width: 1024px) {
 	.intro {
-		width: 92%;
-		margin-bottom: 97px;
+		max-width: 100%;
+		padding: 0 48px;
 	}
 }
 
 @media screen and (max-width: 768px) {
 	.intro {
-		width: 94%;
+		padding: 0 24px;
 		margin-bottom: 97px;
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
 	.intro {
-		width: 90%;
+		padding: 0 16px;
 		margin-bottom: 64px;
 	}
 }

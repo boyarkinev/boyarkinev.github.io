@@ -11,7 +11,7 @@
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
 	.comment__image {
 		margin: 0 auto 17px;
 	}

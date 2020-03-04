@@ -1,9 +1,4 @@
 .additional__container {
-/*
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-*/
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 284px);
 	grid-gap: 16px;
@@ -22,7 +17,7 @@
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
 	.additional__container {
 		grid-template-columns: repeat(1, 1fr);
 	}

@@ -8,6 +8,7 @@
     text-decoration: none;
 	width: 100%;
 	min-height: 590px;
+	box-sizing: border-box;
 }
 
 .cover__items:after {
@@ -26,12 +27,6 @@
 
 
 @media screen and (max-width: 768px) {
-	.cover__items {
-		min-height: 100%;
-	}
-}
-
-@media screen and (max-width: 375px) {
 	.cover__items {
 		min-height: 100%;
 	}

@@ -21,7 +21,7 @@
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
 	.emblems__items {
 		display: flex;
 		flex-direction: column;

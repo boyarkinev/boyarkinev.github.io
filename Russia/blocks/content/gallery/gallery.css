@@ -5,26 +5,26 @@
 .gallery {
 	max-width: 1184px;
 	width: 100%;
-	margin: 0 auto 90px;
+	margin: 0 auto 92px;
+	box-sizing: border-box;
 }
 
 @media screen and (max-width: 1024px) {
 	.gallery {
-		width: 92%;
+		padding: 0 48px;
 		margin-bottom: 102px;
 	}
 }
 
 @media screen and (max-width: 768px) {
 	.gallery {
-		width: 94%;
-		margin-bottom: 102px;
+		padding: 0 24px;
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
 	.gallery {
-		width: 90%;
+		padding: 0 16px;
 		margin-bottom: 64px;
 	}
 }

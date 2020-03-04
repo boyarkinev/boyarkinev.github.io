@@ -4,9 +4,3 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
-
-@media screen and (max-width: 768px) {
-	.intro__two-columns {
-		width: 100%;
-	}
-}

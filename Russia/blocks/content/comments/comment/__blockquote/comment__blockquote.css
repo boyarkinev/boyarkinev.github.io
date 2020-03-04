@@ -13,7 +13,7 @@
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
 	.comment__blockquote {
 		flex-direction: column-reverse;
 		align-items: center;

@@ -11,10 +11,11 @@
 	align-items: center;
 	text-align: center;
 	margin: 0 auto 80px;
+	max-width: 1184px;
     width: 100%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
 	.lead {
 		margin-bottom: 64px;
 	}

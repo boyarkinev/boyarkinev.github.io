@@ -14,10 +14,8 @@
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
 	.intro__quote {
-		width: 100%;
-		margin: 0 0 16px;
 		font-size: 1em;
 	}
 }

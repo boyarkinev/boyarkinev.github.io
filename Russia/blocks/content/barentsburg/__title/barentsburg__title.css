@@ -5,16 +5,3 @@
     margin: 0 auto 8px;
     width: 100%;
 }
-
-@media screen and (max-width: 768px) {
-	.barentsburg__title {
-		width: 94%;
-	}
-}
-
-
-@media screen and (max-width: 375px) {
-	.barentsburg__title {
-		width: 90%;
-	}
-}

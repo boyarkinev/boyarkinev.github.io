@@ -7,23 +7,24 @@
 .additional {
 	width: 100%;
 	margin: 0 auto 102px;
+	box-sizing: border-box;
 }
 
 @media screen and (max-width: 1024px) {
 	.additional {
-		width: 92%;
+		padding: 0 48px;
 	}
 }
 
 @media screen and (max-width: 768px) {
 	.additional {
-		width: 94%;
+		padding: 0 24px;
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
 	.additional {
-		width: 90%;
+		padding: 0 16px;
 		margin-bottom: 64px;
 	}
 }

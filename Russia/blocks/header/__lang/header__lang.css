@@ -20,7 +20,7 @@
     transition-delay: .1s;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
 	.header__lang {
 		font-size: 1.1em;
 	}

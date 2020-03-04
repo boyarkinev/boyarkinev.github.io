@@ -9,7 +9,7 @@
 	margin: 0;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
 	.emblems__item {
 		margin: 0 auto 48px;
 	}

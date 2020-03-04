@@ -5,7 +5,7 @@
 	margin: 0 0 14px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
 	.comment__quote {
 		font-size: 1em;
 		margin: 24px 0 0;

@@ -23,13 +23,13 @@
 @media screen and (max-width: 768px) {
 	.content {
 		width: 100%;
-		margin: 48px auto 102px;
+		margin-bottom: 102px;
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
 	.content {
 		width: 100%;
-		margin: 48px auto 64px;
+		margin-bottom: 64px;
 	}
 }

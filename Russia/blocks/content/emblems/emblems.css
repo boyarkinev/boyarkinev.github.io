@@ -9,22 +9,23 @@
 	max-width: 1184px;
 	width: 100%;
 	margin: 0 auto 85px;
+	box-sizing: border-box;
 }
 
 @media screen and (max-width: 1024px) {
 	.emblems {
-		width: 92%;
+		padding: 0 48px;
 	}
 }
 
 @media screen and (max-width: 768px) {
 	.emblems {
-		width: 94%;
+		padding: 0 24px;
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
 	.emblems {
-		width: 90%;
+		padding: 0 16px;
 	}
 }

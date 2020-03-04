@@ -4,17 +4,3 @@
     width: 100%;
     margin: 0 auto;
 }
-
-@media screen and (max-width: 768px) {
-	.barentsburg__coord {
-		font-size: 1.5em;
-		width: 94%;
-	}
-}
-
-@media screen and (max-width: 375px) {
-	.barentsburg__coord {
-		font-size: 1.5em;
-		width: 90%;
-	}
-}

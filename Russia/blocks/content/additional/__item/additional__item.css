@@ -21,6 +21,7 @@
 	display: flex;
 	content: " ";
 	background-color: rgba(0, 0, 0, .2);
+	transition: background 0.3s ease-in-out;
 }
 
 .additional__item:hover:after {
@@ -28,18 +29,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-	.additional__item {
-		width: 100%;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.additional__item {
-		width: 100%;
-	}
-}
-
-@media screen and (max-width: 375px) {
 	.additional__item {
 		width: 100%;
 	}

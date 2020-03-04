@@ -12,29 +12,24 @@
 	min-height: 52px;
 	position: relative;
 	margin: 30px auto 0;
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
-	.header {
-		max-width: 92%;
-	}
+	box-sizing: border-box;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 	.header {
-		max-width: 92%;
+		padding: 0 48px;
 	}
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 425px) and (max-width: 768px) {
 	.header {
-		max-width: 94%;
+		padding: 0 24px;
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
 	.header {
-		max-width: 90%;
 		margin-top: 16px;
+		padding: 0 16px;
 	}
 }
