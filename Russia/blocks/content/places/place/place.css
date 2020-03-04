@@ -3,10 +3,22 @@
 @import url('__website/place__website.css');
 @import url('__paragraphs/place__paragraphs.css');
 @import url('__paragraph/place__paragraph.css');
+@import url('__header/place__header.css');
+@import url('__content/place__content.css');
 
 .place {
-    display: grid;
-	grid-template-columns: 460px 1fr;
-	grid-gap: 50px 40px;
-    margin: 70px 0 0 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+	.place {
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.place {
+	}
 }

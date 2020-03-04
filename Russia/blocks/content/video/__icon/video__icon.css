@@ -21,3 +21,10 @@
 	z-index: 3;
     animation: pulse 1.2s ease-in-out infinite alternate;
 }
+
+@media screen and (max-width: 768px) {
+	.video__icon {
+		top: 24px;
+		left: 24px;
+	}
+}

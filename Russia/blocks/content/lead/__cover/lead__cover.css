@@ -1,4 +1,12 @@
 .lead__cover {
 	position: relative;
 	margin: 0;
+    width: 100%;
+    max-width: 984px;
+}
+
+@media screen and (max-width: 1024px) {
+	.lead__cover  {
+		width: 92%;
+	}
 }

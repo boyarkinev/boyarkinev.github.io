@@ -1,8 +1,16 @@
 .emblems__item {
-	width: 208px;
-	min-height: 226px;
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
+	max-width: 208px;
+	width: 100%;
+	min-height: 226px;
 	align-items: center;
 	margin: 0;
+}
+
+@media screen and (max-width: 375px) {
+	.emblems__item {
+		margin: 0 auto 48px;
+	}
 }

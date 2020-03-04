@@ -1,0 +1,30 @@
+.emblems__items {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 208px);
+	grid-gap: 72px 36px;
+	width: inherit;
+}
+
+@media screen and (max-width: 1024px) {
+	.emblems__items {
+		justify-content: space-between;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.emblems__items {
+		justify-content: space-between;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.emblems__items {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+}

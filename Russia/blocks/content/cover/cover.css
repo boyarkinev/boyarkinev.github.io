@@ -4,6 +4,14 @@
 @import url('cover-bg/cover-bg.css');
 
 .cover {
-    max-width: 1184px;
-    margin: 90px auto 82px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+    margin: 0 auto 82px;
+}
+
+@media screen and (max-width: 375) {
+	.cover {
+		margin-bottom: 64px;
+	}
 }

@@ -2,15 +2,29 @@
 @import url('__item/emblems__item.css');
 @import url('__city/emblems__city.css');
 @import url('__image/emblems__image.css');
+@import url('__items/emblems__items.css');
 
 .emblems {
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-gap: 72px 36px;
-	margin: 82px auto 76px;
+	margin: 0 auto 76px;
+	max-width: 1184px;
+	width: 100%;
+	margin: 0 auto 85px;
 }
 
-.emblems :first-child {
-	grid-column: 1/6;
-	grid-row: 1/2;
+@media screen and (max-width: 1024px) {
+	.emblems {
+		width: 92%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.emblems {
+		width: 94%;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.emblems {
+		width: 90%;
+	}
 }

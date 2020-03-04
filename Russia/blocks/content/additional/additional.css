@@ -5,8 +5,25 @@
 @import url('__item-bg/additional__item-bg.css');
 
 .additional {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 106px auto;
+	width: 100%;
+	margin: 0 auto 102px;
+}
+
+@media screen and (max-width: 1024px) {
+	.additional {
+		width: 92%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.additional {
+		width: 94%;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.additional {
+		width: 90%;
+		margin-bottom: 64px;
+	}
 }

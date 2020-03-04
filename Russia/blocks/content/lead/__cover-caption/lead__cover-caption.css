@@ -1,8 +1,23 @@
 .lead__cover-caption {
-	font-size: 10px;
-	line-height: 12px;
+	font-size: .6em;
+	line-height: 1.2;
 	letter-spacing: 0.15em;
 	text-transform: uppercase;
 	text-align: left;
 	margin-top: 10px;
+	width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	.lead__cover-caption {
+		width: 94%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.lead__cover-caption {
+		margin: 0 auto;
+		width: 90%;
+	}
 }

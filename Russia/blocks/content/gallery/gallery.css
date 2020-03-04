@@ -1,12 +1,30 @@
+@import url('__items/gallery__items.css');
 @import url('__item/gallery__item.css');
 @import url('__title/gallery__title.css');
 
 .gallery {
 	max-width: 1184px;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-auto-rows: repeat(3, 1fr);
-	grid-gap: 16px;
-	margin: 80px auto 90px;
-    position: relative;
+	width: 100%;
+	margin: 0 auto 90px;
+}
+
+@media screen and (max-width: 1024px) {
+	.gallery {
+		width: 92%;
+		margin-bottom: 102px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.gallery {
+		width: 94%;
+		margin-bottom: 102px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.gallery {
+		width: 90%;
+		margin-bottom: 64px;
+	}
 }

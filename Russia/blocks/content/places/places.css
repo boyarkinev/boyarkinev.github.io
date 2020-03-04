@@ -2,6 +2,25 @@
 
 .places {
 	max-width: 984px;
-    min-width: 492px;
-	margin: 90px auto 106px;
+	width: 100%;
+	margin: 0 auto 102px;
+}
+
+@media screen and (max-width: 1024px) {
+	.places {
+		width: 92%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.places {
+		width: 94%;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.places {
+		width: 100%;
+		margin-bottom: 64px;
+	}
 }

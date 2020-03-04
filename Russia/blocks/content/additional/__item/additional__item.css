@@ -10,9 +10,37 @@
 	position: relative;
 	width: 284px;
 	height: 330px;
-	background-color: black;
 }
 
-.additional__item:hover .additional__item-bg {
-    opacity: .2;
+.additional__item:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	content: " ";
+	background-color: rgba(0, 0, 0, .2);
+}
+
+.additional__item:hover:after {
+	background-color: rgba(0, 0, 0, .8);
+}
+
+@media screen and (max-width: 1024px) {
+	.additional__item {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.additional__item {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.additional__item {
+		width: 100%;
+	}
 }

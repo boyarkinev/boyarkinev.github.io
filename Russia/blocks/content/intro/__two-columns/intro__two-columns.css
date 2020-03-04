@@ -1,6 +1,12 @@
 .intro__two-columns {
-    width: 100%;
+    width: inherit;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+	.intro__two-columns {
+		width: 100%;
+	}
 }

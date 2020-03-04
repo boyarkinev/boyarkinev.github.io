@@ -1,5 +1,23 @@
 .comments__container {
+/*
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-column-gap: 19px;
+*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+	.comments__container {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.comments__container {
+		flex-direction: column;
+	}
 }

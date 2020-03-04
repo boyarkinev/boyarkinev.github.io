@@ -1,14 +1,40 @@
 @import url('__langs/header__langs.css');
 @import url('__list-item/header__list_item.css');
 @import url('__lang/header__lang.css');
+@import url('__logo/header__logo.css');
 
 .header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	max-width: 1184px;
-    width: 100%;
-	height: 52px;
+    max-width: 1184px;
+	width: 100%;
+	min-height: 52px;
 	position: relative;
 	margin: 30px auto 0;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+	.header {
+		max-width: 92%;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.header {
+		max-width: 92%;
+	}
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+	.header {
+		max-width: 94%;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.header {
+		max-width: 90%;
+		margin-top: 16px;
+	}
 }

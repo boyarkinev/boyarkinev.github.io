@@ -4,15 +4,16 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	min-width: 1440px;
+	max-width: 1440px;
+	width: 100%;
 	margin: 0 auto;
-	position: relative;
+    padding: 0;
 	font-family: 'Inter', Arial, sans-serif;
-	background-color: #2A2C2F;
 	color: #fff;
 }
 
+
 /*
-h1, h2, h3, h4, div, ul, li, nav {
-    border: 1px solid red;
+h1, h2, h3, h4, p, div, ul, li, nav, img {
+    border: 1px solid gray;
 }*/

@@ -5,3 +5,9 @@
 .footer__navigation-item:last-child {
     margin-right: 0;
 }
+
+@media screen and (max-width: 375px) {
+	.footer__navigation-item {
+		margin-bottom: 32px;
+	}
+}

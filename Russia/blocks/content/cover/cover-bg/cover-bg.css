@@ -1,11 +1,6 @@
 .cover-bg {
-    position: absolute;
+	background-image: url(../../../../images/cover.jpg);
     background-size: cover;
-	top: 0;
-	left: 0;
-	max-width: 1184px;
-    max-height: 594px;
-    object-fit: cover;
-    transition: opacity 0.3s ease-in-out;
-    opacity: .8;
+	box-sizing: border-box;
+	background-position: bottom;
 }

@@ -1,7 +1,20 @@
 .barentsburg__title {
     font-weight: 900;
-    font-size: 42px;
-    line-height: 61px;
-    margin: 0 0 8px;
-    width: auto;
+    font-size: 2.62em;
+    line-height: 1.45;
+    margin: 0 auto 8px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	.barentsburg__title {
+		width: 94%;
+	}
+}
+
+
+@media screen and (max-width: 375px) {
+	.barentsburg__title {
+		width: 90%;
+	}
 }

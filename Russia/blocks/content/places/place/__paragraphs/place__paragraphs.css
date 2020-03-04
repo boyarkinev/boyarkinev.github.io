@@ -1,5 +1,27 @@
 .place__paragraphs {
-    font-size: 18px;
-	line-height: 30px;
+    font-size: 1.13em;
+	line-height: 1.6;
 	color: #fff;
+	width: calc((100% - 40px)/2);
+}
+
+@media screen and (max-width: 1024px) {
+	.place__paragraphs {
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.place__paragraphs {
+		font-size: 1em;
+		width: calc((101% - 28px)/2);
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.place__paragraphs {
+		font-size: 1em;
+		width: 90%;
+		margin: 0 auto;
+	}
 }
