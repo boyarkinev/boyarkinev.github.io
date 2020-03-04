@@ -2,7 +2,6 @@
     width: calc((100% - 40px)/2);
 	object-fit: cover;
 	margin: 0;
-	padding: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -16,6 +15,6 @@
 @media screen and (max-width: 425px) {
 	.place__pic {
 		width: 100%;
-		margin-bottom: 24px;
+/*		margin-bottom: 24px;*/
 	}
 }
