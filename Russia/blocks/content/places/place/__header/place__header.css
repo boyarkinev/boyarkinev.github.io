@@ -9,7 +9,6 @@
     position: relative;
 }
 
-
 @media screen and (max-width: 1024px) {
 	.place__header {
 		margin: 0 0 40px 0;
