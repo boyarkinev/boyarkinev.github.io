@@ -1,5 +1,5 @@
 .intro__two-columns {
-    width: inherit;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

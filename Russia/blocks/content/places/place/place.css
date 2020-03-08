@@ -11,10 +11,23 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
+    margin: 0 48px;
+    padding: 0;
 }
 
 @media screen and (max-width: 1024px) {
 	.place {
-		width: 100%;
+        margin: 0 48px;
+}
+
+
+@media screen and (max-width: 768px) {
+	.place {
+        margin: 0 24px;
+}
+
+@media screen and (max-width: 596px) {
+	.place {
+		margin: 0;
 	}
 }

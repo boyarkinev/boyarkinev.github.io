@@ -8,8 +8,9 @@
 }
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 596px) {
 	.place__website {
 		display: none;
+        position: absolute;
 	}
 }

@@ -2,6 +2,7 @@
 @import url('_observatory/video__item-bg_observatory.css');
 
 .video__item-bg {
+	width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;

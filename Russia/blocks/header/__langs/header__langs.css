@@ -1,7 +1,5 @@
 .header__langs {
     list-style-type: none;
     display: flex;
-    align-items: flex-start;
-    padding: 0;
     margin: 16px 0 0;
 }

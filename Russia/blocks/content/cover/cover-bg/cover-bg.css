@@ -1,6 +1,5 @@
 .cover-bg {
 	background-image: url(../../../../images/cover.jpg);
     background-size: cover;
-	box-sizing: border-box;
 	background-position: bottom;
 }

@@ -5,23 +5,33 @@
 	width: calc((100% - 40px)/2);
 }
 
+
+
 @media screen and (max-width: 1024px) {
 	.place__paragraphs {
+       
 		font-size: 1.2em;
+		font-size: 1.86vw;
 	}
 }
 
 @media screen and (max-width: 768px) {
 	.place__paragraphs {
 		font-size: 1em;
-		width: calc((101% - 28px)/2);
+		width: calc((100% - 28px)/2);
+	}
+}
+
+@media screen and (max-width: 596px) {
+	.place__paragraphs {
+        width: auto;
+        margin: 0 24px;
 	}
 }
 
 @media screen and (max-width: 425px) {
 	.place__paragraphs {
-		width: 100%;
-		padding: 0 16px;
-		margin: 0 auto;
+        width: auto;
+        margin: 0 16px;
 	}
 }

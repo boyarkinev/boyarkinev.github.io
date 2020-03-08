@@ -5,14 +5,16 @@
 @import url('__item-bg/additional__item-bg.css');
 
 .additional {
+	max-width: 1184px;
 	width: 100%;
 	margin: 0 auto 102px;
-	box-sizing: border-box;
+	
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
 	.additional {
 		padding: 0 48px;
+		box-sizing: border-box;
 	}
 }
 

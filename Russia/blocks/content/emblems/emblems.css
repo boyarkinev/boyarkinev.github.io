@@ -5,16 +5,16 @@
 @import url('__items/emblems__items.css');
 
 .emblems {
-	margin: 0 auto 76px;
+    display: grid;
 	max-width: 1184px;
 	width: 100%;
 	margin: 0 auto 85px;
-	box-sizing: border-box;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
 	.emblems {
 		padding: 0 48px;
+        box-sizing: border-box;
 	}
 }
 

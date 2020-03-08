@@ -10,21 +10,23 @@
 	box-sizing: border-box;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
 	.comments {
+		margin-bottom: 102px;
 		padding: 0 48px;
 	}
 }
 
 @media screen and (max-width: 768px) {
 	.comments {
+		margin-bottom: 102px;
 		padding: 0 24px;
 	}
 }
 
 @media screen and (max-width: 425px) {
 	.comments {
-		padding: 0 16px;
 		margin-bottom: 48px;
+		padding: 0 16px
 	}
 }

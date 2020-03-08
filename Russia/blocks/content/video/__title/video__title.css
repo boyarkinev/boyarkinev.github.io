@@ -7,6 +7,12 @@
 	z-index: 3;
 }
 
+@media screen and (max-width: 1024px) {
+	.video__title {
+		font-size: 3.52vw;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.video__title {
 		font-size: 1.5em;

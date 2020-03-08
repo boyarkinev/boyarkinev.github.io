@@ -3,19 +3,19 @@
 	line-height: 1.1;
 	font-weight: 900;
 	font-style: normal;
-	width: calc((100% - 40px)/2);
+	max-width: calc((100% - 40px)/2);
 	margin: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 910px) {
 	.place__title {
-		font-size: 2.6em;
+		font-size: 7.92vw;
 	}
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 596px) {
 	.place__title {
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
 		font-size: 2em;
 	}
