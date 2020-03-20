@@ -248,7 +248,7 @@ body{
 	align-items: center;
     margin: 0;
     width: 130px;
-    @extend %ul-style;
+//    @extend %ul-style;
 }
 
 @media screen and (max-width: 425px){
@@ -262,8 +262,8 @@ body{
 }
 
 .social__icon{
-	display: flex;
-    @include backgrnd-img(no-repeat, center, cover);
+//	display: flex;
+//    @include backgrnd-img(no-repeat, center, cover);
 	margin: 0;
     width: 18px;
     height: 18px;
