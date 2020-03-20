@@ -264,13 +264,13 @@ body{
 .social__icon{
 //	display: flex;
 //    @include backgrnd-img(no-repeat, center, cover);
-	margin: 0;
-    width: 18px;
-    height: 18px;
-	content: "";
-//    &:hover{
-//        animation: fade .25s ease-out backwards;
-//    }
+//	margin: 0;
+//    width: 18px;
+//    height: 18px;
+//	content: "";
+    &:hover{
+        animation: fade .25s ease-out backwards;
+    }
 }
 
 @media screen and (max-width: 425px){
