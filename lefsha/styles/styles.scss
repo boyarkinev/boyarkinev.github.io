@@ -242,14 +242,14 @@ body{
     height: 28px;
 }
 
-//.social{
-//    display: flex;
-//    justify-content: space-between;
-//	align-items: center;
-//    margin: 0;
-//    width: 130px;
-//    @extend %ul-style;
-//}
+.social{
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+    margin: 0;
+    width: 130px;
+    @extend %ul-style;
+}
 
 @media screen and (max-width: 425px){
     .social{
