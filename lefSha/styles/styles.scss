@@ -1,4 +1,4 @@
-@import url(../fonts/roboto.css);
+@import '../fonts/roboto.css';
 
 @keyframes fade{
     from{
@@ -210,7 +210,7 @@ body{
     padding: 0 2rem;
     box-sizing: border-box;
     overflow-x: hidden;
-    font-family: 'Roboto';
+	font-family: 'Roboto';
     color: #fff;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
