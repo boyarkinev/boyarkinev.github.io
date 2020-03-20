@@ -244,10 +244,10 @@ body{
 
 .social{
     display: flex;
-//    justify-content: space-between;
-//	align-items: center;
-//    margin: 0;
-//    width: 130px;
+    justify-content: space-between;
+	align-items: center;
+    margin: 0;
+    width: 130px;
 //    @extend %ul-style;
 }
 
@@ -265,8 +265,8 @@ body{
 	display: flex;
     @include backgrnd-img(no-repeat, center, cover);
 	margin: 0;
-//    width: 18px;
-//    height: 18px;
+    width: 18px;
+    height: 18px;
 //    &:hover{
 //        animation: fade .25s ease-out backwards;
 //    }
