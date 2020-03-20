@@ -256,13 +256,13 @@ body{
     display: flex;
 }
 
-.social__icon {
+.social__icon{
     @include backgrnd-img(no-repeat, center, cover);
     width: 18px;
     height: 18px;
-    &:hover{
-		animation: fade .25s ease-out backwards;
-    }
+//    &:hover{
+//		animation: fade .25s ease-out backwards;
+//    }
 }
 
 @media screen and (max-width: 425px){
@@ -485,12 +485,14 @@ body{
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 12%;
 	align-items: center;
+	width: 100%;
 }
 
 @media screen and (max-width: 700px){
 	.contacts__items{
 		grid-template-columns: repeat(1, 1fr);
 		grid-gap: 0;
+		width: auto;
 	}
 }
 
