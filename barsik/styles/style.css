@@ -55,10 +55,10 @@ section, div, h2, p, fieldset, label {
 .separator {
 	height: 3px;
 	background-color: #68b738;
-    position: relative;
+    	position: relative;
 	width: 100vw;
-    margin-left: -50vw;
-    left: 50%;
+    	margin-left: -50vw;
+    	left: 50%;
 	top: 19px;
 	z-index: -1;
 }
@@ -260,15 +260,12 @@ section, div, h2, p, fieldset, label {
 /* задали стили для блока "дополнительно" */
 .addit__label {
 	display: inline-block;
-<<<<<<< HEAD
 	width: 249px;
 	margin: 0 0 0 40px;
 	padding: 0 20px 0 0;
-=======
 	min-width: 245px;
 /*	width: 245px;*/
 	padding: 0 0 0 0;
->>>>>>> b88b5c5b9fe348f203a182ab9b275f9ec13fbe7a
 	cursor: pointer; /* задали состояние курсора */
 	position: relative;
 	margin-right: 76px;
@@ -345,3 +342,4 @@ section, div, h2, p, fieldset, label {
 	border: 0;
 }
 /* задали стили для текста */
+
