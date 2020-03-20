@@ -244,20 +244,20 @@ body{
 
 //ЭКСПЕРИМЕНТЫ ->
 
-.ul-null{
-	display: flex;
-	padding: 0;
-	margin: 0;
-    list-style-type: none;
-}
-
-.ico{
-	display: flex;
-	background-image: url(../images/facebook.svg);
-	@include backgrnd-img(no-repeat, center, cover);
-	width: 18px;
-    height: 18px;
-}
+//.ul-null{
+//	display: flex;
+//	padding: 0;
+//	margin: 0;
+//    list-style-type: none;
+//}
+//
+//.ico{
+//	display: flex;
+//	background-image: url(../images/facebook.svg);
+//	@include backgrnd-img(no-repeat, center, cover);
+//	width: 18px;
+//    height: 18px;
+//}
 
 //<- ЭКСПЕРИМЕНТЫ
 
@@ -281,11 +281,12 @@ body{
 }
 
 .social__icon{
+	display: flex;
     @include backgrnd-img(no-repeat, center, cover);
     width: 18px;
     height: 18px;
     &:hover{
-//        animation: fade .25s ease-out backwards;
+        animation: fade .25s ease-out backwards;
     }
 }
 
