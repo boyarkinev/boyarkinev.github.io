@@ -280,6 +280,7 @@ body{
 //	@include backgrnd-img(no-repeat, center, cover);
 	width: 18px;
     height: 18px;
+	content: '';
 }
 
 .social__icon_twitter{
