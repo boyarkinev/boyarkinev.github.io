@@ -739,7 +739,7 @@ body{
     }
 }
 
-.privacy{
+.privacy__link{
     display: flex;
     @include text-style(0.9375rem, 1.2, 104px 0 0, normal);
     color: #949494;
@@ -752,31 +752,31 @@ body{
 }
 
 @media screen and (max-width: 768px){
-    .privacy{
+    .privacy__link{
         margin-top: 62px;
     }
 }
 
 @media screen and (max-width: 425px){
-    .privacy{
+    .privacy__link{
         margin-top: 36px;
     }
 }
 
 //Модальное окно
 
-.privacy__title{
-	@input text-style(.8rem, 1, 0, bold);
+.privacy__modal-title{
+	@input text-style(.8rem, 1, 25px, bold);
 	color: $block-backgrnd;
 }
 
-.privacy__text{
+.privacy__modal-text{
 	@input text-style(.4rem, 1, 0, normal);
 	color: $block-backgrnd;
 }
 
 
-.container {
+.privacy__modal-container {
 	position: relative;
 	margin: 0 auto;
 	
@@ -802,6 +802,10 @@ body{
 	.modal-text-block{
 		overflow: scroll;
 		height: calc(100% - 30px);
+		border-radius: 4px;
+		padding: 8px;
+		box-sizing: border-box;
+		box-shadow: inset 0px 3px 10px rgba(199, 199, 199, 0.2);
 	}
 		
 	#modal {
@@ -827,7 +831,7 @@ body{
 //			margin-left: -25%;
 			width: 50vw;
 			height: 80%;
-			padding: 40px;
+			padding: 40px 20px;
 			background-color: white;
 			border-radius: 5px;
 			visibility: visible;
@@ -839,9 +843,9 @@ body{
 			
 			.modal-close {
 				position: absolute;
-				top: 20px;
+				top: 15px;
 				right: 20px;
-				font-size: 1.5rem;
+				font-size: 1.2rem;
 				color: transparentize($block-backgrnd,0.6);
 				transition: color 200ms,
 						  transform 500ms;
@@ -855,13 +859,14 @@ body{
 			.modal-content-button {
 				position: relative;
 				float: right;
-				margin: 10px 0 0;
+				margin: 10px 0;
 				padding: 10px 30px;
 				color: $block-backgrnd;
 				border-radius: 5px 5px 8px 8px;
 				background-color: $yellow;
 				transition: box-shadow 0.2s;
 				box-shadow: 0 3px 0 $yellow-shaddow-dark;
+				cursor: pointer;
 				&:hover{
 					box-shadow: 0 5px 0 $yellow-shaddow-dark;
 				}
@@ -886,28 +891,31 @@ body{
 		
 		@media screen and (max-width: 768px){
 				&:checked ~ .modal-content{
-					left: 20%;
-					
+					left: 12%;
+					width: 70vw;
 				}
 		}
 		
 		@media screen and (max-width: 425px){
 				&:checked ~ .modal-content{
-					left: 16%;
+					left: 5%;
+					width: 81vw;
 					font-size: .8rem;
 				}
 		}
 		
 		@media screen and (max-width: 375px){
 				&:checked ~ .modal-content{
-					left: 14%;
+					left: 4%;
+					width: 82vw;
 					font-size: .6rem;
 				}
 		}
 		
 		@media screen and (max-width: 320px){
 				&:checked ~ .modal-content{
-					left: 13%;
+					left: 4%;
+					width: 80vw;
 				}
 		}
 			

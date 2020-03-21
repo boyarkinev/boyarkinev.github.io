@@ -2,13 +2,12 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link href="images/ico.ico" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="vendor/normalize.css">
     <link type="text/css" rel="stylesheet" href="styles/styles.css">
-    <link href="images/ico.ico" rel="shortcut icon">
     <title>Студия web-разработки "Наколенке".</title>
-    <script src="scripts/jquery-latest.js"
-type="text/javascript"></script>
+    <script src="scripts/jquery-latest.js" type="text/javascript"></script>
 </head>
 <body>
     <div class="page">
@@ -92,7 +91,7 @@ type="text/javascript"></script>
                         <span class="contacts__form-pic contacts__form-pic_name"></span>
                     </div>
                     <div class="contacts__form-field contacts__form-field_space-after">
-                        <input type="tel" id="tel" placeholder="Ваш телефон" class="contacts__form-text" required>
+                        <input type="tel" name="phone" id="phone" placeholder="Ваш телефон" class="contacts__form-text" required data-validate>
                         <span class="contacts__form-pic contacts__form-pic_cell"></span>
                     </div>
                     <button type="submit" class="btn">Бесплатная консультация</button>
@@ -132,47 +131,47 @@ type="text/javascript"></script>
                                 </li>
                             </ul>
                         </nav>
-                        <label class="privacy" for="modal">Политика конфиденциальности</label>
+                        <label class="privacy__link" for="modal">Политика конфиденциальности</label>
                     </div>
                 </div>
             </div>
 <!-- Модальное окно политики конфиденциальности -->
-			<div class="container">
+			<div class="privacy__modal-container">
 				<input id="modal" type="checkbox">
 				<label class="modal-background" for="modal"></label>
 				<div class="modal-content">
 					<label class="modal-close" for="modal">&#10005;</label>
 					<div class="modal-text-block">
-						<h3 class="privacy__title">Политика конфиденциальности</h3>
-						<p class="privacy__text">
+						<h3 class="privacy__modal-title">Политика конфиденциальности</h3>
+						<p class="privacy__modal-text">
 							Оставляя данные на сайте, Вы соглашаетесь с Политикой конфиденциальности и защиты информации.
 						</p>
-						<h4 class="privacy__title">Защита данных</h4>
-						<p class="privacy__text">
+						<h4 class="privacy__modal-title">Защита данных</h4>
+						<p class="privacy__modal-text">
 							Администрация сайта (далее Сайт) не может передать или раскрыть информацию, предоставленную пользователем (далее Пользователь) и использовании функций сайта третьим лицам, кроме случаев, описанных законодательством страны, на территории которой пользователь ведет свою деятельность. 
 						</p>
-						<h4 class="privacy__title">Получение персональной информации</h4>
-						<p class="privacy__text">
+						<h4 class="privacy__modal-title">Получение персональной информации</h4>
+						<p class="privacy__modal-text">
 							Для коммуникации на сайте пользователь обязан внести некоторую персональную информацию. Для проверки предоставленных данных, сайт оставляет за собой право потребовать доказательства идентичности в онлайн или офлайн режимах.
 						</p>
-						<h4 class="privacy__title">Использование персональной информации</h4>
-						<p class="privacy__text">
+						<h4 class="privacy__modal-title">Использование персональной информации</h4>
+						<p class="privacy__modal-text">
 							Сайт использует личную информацию Пользователя для обслуживания и для улучшения качества предоставляемых услуг. Сайт прилагает все усилия для сбережения в сохранности личных данных Пользователя. Личная информация может быть раскрыта в случаях, описанных законодательством, либо когда администрация сочтет подобные действия необходимыми для соблюдения юридической процедуры, судебного распоряжения или легального процесса необходимого для работы Пользователя с Сайтом. В других случаях, ни при каких условиях, информация, которую Пользователь передает Сайту, не будет раскрыта третьим лицам.
 						</p>
-						<h4 class="privacy__title">Коммуникация</h4>
-						<p class="privacy__text">
+						<h4 class="privacy__modal-title">Коммуникация</h4>
+						<p class="privacy__modal-text">
 							После того, как Пользователь оставил данные, он получает сообщение, подтверждающее его успешную регистрацию. Пользователь имеет право в любой момент потребовать удалить свои данные из базы сайта.
 						</p>
-						<h4 class="privacy__title">Ссылки</h4>
-						<p class="privacy__text">
+						<h4 class="privacy__modal-title">Ссылки</h4>
+						<p class="privacy__modal-text">
 							На сайте могут содержаться ссылки на другие сайты. Сайт не несет ответственности за содержание, качество и политику безопасности этих сайтов. Данное заявление о конфиденциальности относится только к информации, размещенной непосредственно на сайте. 
 						</p>
-						<h4 class="privacy__title">Безопасность</h4>
-						<p class="privacy__text">
+						<h4 class="privacy__modal-title">Безопасность</h4>
+						<p class="privacy__modal-text">
 							Сайт обеспечивает безопасность учетной записи Пользователя от несанкционированного доступа.
 						</p>
-						<h4 class="privacy__title">Уведомления об изменениях </h4>
-						<p class="privacy__text">
+						<h4 class="privacy__modal-title">Уведомления об изменениях </h4>
+						<p class="privacy__modal-text">
 							Сайт оставляет за собой право вносить изменения в Политику конфиденциальности без дополнительных уведомлений. Нововведения вступают в силу с момента их опубликования. Пользователи могут отслеживать изменения в Политике конфиденциальности самостоятель
 						</p>
 					</div>
