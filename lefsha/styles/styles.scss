@@ -775,6 +775,7 @@ body{
 	color: $block-backgrnd;
 }
 
+
 .container {
 	position: relative;
 	margin: 0 auto;
@@ -797,6 +798,11 @@ body{
 		transform: scale(0);
 		transition: transform 500ms;
 	}
+	
+	.modal-text-block{
+		overflow: scroll;
+		height: calc(100% - 30px);
+	}
 		
 	#modal {
 		display: none;
@@ -815,10 +821,10 @@ body{
 		
 		&:checked ~ .modal-content {
 			position: fixed;
-			top: 50%;
+			top: 20px;
 			left: 50%;
-			margin-top: -25%;
-			margin-left: -25%;
+//			margin-top: -25%;
+//			margin-left: -25%;
 			width: 50vw;
 			height: 80%;
 			padding: 40px;
@@ -830,7 +836,6 @@ body{
 			cursor: auto;
 			transform: scale(1);
 			transition: transform 500ms;
-			overflow: scroll;
 			
 			.modal-close {
 				position: absolute;
@@ -850,7 +855,7 @@ body{
 			.modal-content-button {
 				position: relative;
 				float: right;
-				margin: 0;
+				margin: 10px 0 0;
 				padding: 10px 30px;
 				color: $block-backgrnd;
 				border-radius: 5px 5px 8px 8px;
@@ -865,5 +870,46 @@ body{
 				}
 			}
 		}
+		
+		@media screen and (min-width: 1024px){
+				&:checked ~ .modal-content{
+					margin-left: -25%;
+				}
+		}
+		
+		@media screen and (max-width: 1024px){
+				&:checked ~ .modal-content{
+					left: 22%;
+					margin-left: 0;
+				}
+		}
+		
+		@media screen and (max-width: 768px){
+				&:checked ~ .modal-content{
+					left: 20%;
+					
+				}
+		}
+		
+		@media screen and (max-width: 425px){
+				&:checked ~ .modal-content{
+					left: 16%;
+					font-size: .8rem;
+				}
+		}
+		
+		@media screen and (max-width: 375px){
+				&:checked ~ .modal-content{
+					left: 14%;
+					font-size: .6rem;
+				}
+		}
+		
+		@media screen and (max-width: 320px){
+				&:checked ~ .modal-content{
+					left: 13%;
+				}
+		}
+			
 	}
 }
