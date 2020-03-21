@@ -86,7 +86,7 @@ $btn-txt-color:#1B2944;
 //создали миксин текста
 
 
-//ПРЕИСПОЛЬЗУЕМЫ СТИЛИ ->
+//ПРЕИСПОЛЬЗУЕМЫЕ СТИЛИ ->
 
 .block__title {
     @include text-style(2.25rem, 1.2, 0 0 84px, bold);
@@ -197,7 +197,7 @@ $btn-txt-color:#1B2944;
 }
 //стиль кнопки
 
-//<- ПРЕИСПОЛЬЗУЕМЫ СТИЛИ
+//<- ПРЕИСПОЛЬЗУЕМЫЕ СТИЛИ
 
 
 body{
@@ -209,7 +209,6 @@ body{
     height: 100vh;
     padding: 0 2rem;
     box-sizing: border-box;
-    overflow-x: hidden;
 	font-family: 'Roboto';
     color: #fff;
     -moz-osx-font-smoothing: grayscale;
@@ -431,7 +430,7 @@ body{
 .advantage__item{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .advantage__pic{
