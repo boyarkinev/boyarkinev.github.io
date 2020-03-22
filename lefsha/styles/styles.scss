@@ -475,26 +475,27 @@ body{
 
 .contacts{
     @extend %flex-col;
-    margin: 52px auto 60px;
+    margin: 0 auto;
     max-width: 936px;
     width: 100%;
+	padding: 52px 0 60px;
 }
 
 @media screen and (max-width: 700px){
     .contacts{
-        margin: 28px auto 36px;
+        padding: 28px 0 36px;
     }
 }
 
 @media screen and (max-width: 425px){
     .contacts{
-        margin: 28px auto 24px;
+        padding: 28px 0 24px;
     }
 }
 
 @media screen and (max-width: 320px){
     .contacts{
-        margin: 28px auto 16px;
+        padding: 28px auto 16px;
     }
 }
 
