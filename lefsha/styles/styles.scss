@@ -305,21 +305,21 @@ body{
 }
 
 .lead__info{
-    max-width: 420px;
+    max-width: 26.25rem;
     width: 100%;
 }
 
-@media screen and (max-width: 1280px){
-    .lead__info{
-        width: calc((200vw/5-224));
-    }
-}
+//@media screen and (max-width: 1280px){
+//    .lead__info{
+//        width: calc((200vw/5-224));
+//    }
+//}
 
 @media screen and (max-width: 700px){
     .lead__info{
         margin: 0 auto;
         text-align: center;
-        width: 100%;
+//        width: 100%;
     }
 }
 
