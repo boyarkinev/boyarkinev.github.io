@@ -1,8 +1,1 @@
-
-.DS_Store
-barsik/.DS_Store
-barsik/fonts/.DS_Store
-barsik/styles/.DS_Store
-Russia/.DS_Store
-Russia/blocks/.DS_Store
-.DS_Store
+*.DS_Store
