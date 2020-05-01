@@ -1,0 +1,11 @@
+.intro__quote-detales {
+  max-width: 283px;
+  min-width: 124px;
+  margin: 0 0 24px;
+}
+
+@media screen and (max-width: 425px) {
+	.intro__quote-detales {
+		margin: 0 0 32px;
+	}
+}

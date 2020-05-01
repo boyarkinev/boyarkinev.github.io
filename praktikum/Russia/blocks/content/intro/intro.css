@@ -1,0 +1,41 @@
+@import url('__title/intro__title.css');
+@import url('__subtitle/intro__subtitle.css');
+@import url('__quote/intro__quote.css');
+@import url('__facts/intro__facts.css');
+@import url('__two-columns/intro__two-columns.css');
+@import url('__accent/intro__accent.css');
+@import url('__quote-detales/intro__quote-detales.css');
+@import url('__quote-detale/intro__quote-detale.css');
+
+.intro {
+	max-width: 984px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+	margin: 0 auto 102px;
+}
+
+@media screen and (max-width: 1024px) {
+	.intro {
+		max-width: 100%;
+		margin-left: 48px;
+		margin-right: 48px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.intro {
+		margin-left: 24px;
+		margin-right: 24px;
+		margin-bottom: 97px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.intro {
+		margin-left: 16px;
+		margin-right: 16px;
+		margin-bottom: 64px;
+	}
+}

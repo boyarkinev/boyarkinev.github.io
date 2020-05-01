@@ -1,0 +1,37 @@
+@import url('__items/gallery__items.css');
+@import url('__item/gallery__item.css');
+@import url('__title/gallery__title.css');
+
+.gallery {
+	max-width: 1184px;
+    width: 100%;
+	margin: 0 auto 92px;
+	object-fit: cover;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1280px) {
+	.gallery {
+		padding: 0 48px;
+		margin-bottom: 102px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.gallery {
+		padding: 0 48px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.gallery {
+		padding: 0 24px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.gallery {
+		padding: 0 16px;
+		margin-bottom: 64px;
+	}
+}

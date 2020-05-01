@@ -1,0 +1,30 @@
+.place__header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin: 0 auto 60px 0;
+	width: 100%;
+    position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+	.place__header {
+		margin: 0 0 40px 0;
+	}
+}
+
+@media screen and (max-width: 596px) {
+	.place__header {
+		margin: 0 24px 32px 24px;
+        font-size: 4.5vw;
+	}
+}
+
+
+@media screen and (max-width: 425px) {
+	.place__header {
+		margin: 0 16px 32px 16px;
+	}
+}

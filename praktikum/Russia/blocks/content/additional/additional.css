@@ -1,0 +1,32 @@
+@import url('__container/additional__container.css');
+@import url('__heading/additional__heading.css');
+@import url('__text/additional__text.css');
+@import url('__item/additional__item.css');
+@import url('__item-bg/additional__item-bg.css');
+
+.additional {
+	max-width: 1184px;
+	width: 100%;
+	margin: 0 auto 102px;
+	
+}
+
+@media screen and (max-width: 1280px) {
+	.additional {
+		padding: 0 48px;
+		box-sizing: border-box;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.additional {
+		padding: 0 24px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.additional {
+		padding: 0 16px;
+		margin-bottom: 64px;
+	}
+}

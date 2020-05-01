@@ -1,0 +1,14 @@
+.intro__facts {
+	font-size: .8em;
+	line-height: 1.5;
+	font-weight: normal;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+@media screen and (max-width: 425px) {
+	.intro__facts {
+		font-size: .75em;
+	}
+}

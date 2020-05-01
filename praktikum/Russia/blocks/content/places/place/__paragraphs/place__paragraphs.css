@@ -1,0 +1,37 @@
+.place__paragraphs {
+    font-size: 1.13em;
+	line-height: 1.6;
+	color: #fff;
+	width: calc((100% - 40px)/2);
+}
+
+
+
+@media screen and (max-width: 1024px) {
+	.place__paragraphs {
+       
+		font-size: 1.2em;
+		font-size: 1.86vw;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.place__paragraphs {
+		font-size: 1em;
+		width: calc((100% - 28px)/2);
+	}
+}
+
+@media screen and (max-width: 596px) {
+	.place__paragraphs {
+        width: auto;
+        margin: 0 24px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.place__paragraphs {
+        width: auto;
+        margin: 0 16px;
+	}
+}

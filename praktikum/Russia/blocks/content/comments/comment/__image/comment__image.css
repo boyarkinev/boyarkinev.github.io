@@ -1,0 +1,18 @@
+.comment__image {
+	width: 97px;
+	height: 97px;
+	border-radius: 50%;
+	margin: 0 0 36px;
+}
+
+@media screen and (max-width: 768px) {
+	.comment__image {
+		margin: 0 auto 17px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.comment__image {
+		margin: 0 auto 17px;
+	}
+}

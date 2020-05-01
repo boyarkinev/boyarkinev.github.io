@@ -1,0 +1,26 @@
+.lead__cover {
+	position: relative;
+	margin: 0 auto;
+    max-width: 984px;
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+	.lead__cover  {
+/*		max-width: 928px;*/
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.lead__cover  {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.lead__cover  {
+		width: 100%;
+		padding: 0;
+	}
+}

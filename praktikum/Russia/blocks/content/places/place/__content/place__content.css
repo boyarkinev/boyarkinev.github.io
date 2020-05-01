@@ -1,0 +1,15 @@
+.place__content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 0 72px 0;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 425px) {
+	.place__content {
+		margin: 0 0 48px 0;
+	}
+}

@@ -1,0 +1,16 @@
+.url {
+    font-size: 1.12em;
+	line-height: 1.5;
+	text-decoration: none;
+	color: #fff;
+	box-sizing: border-box;
+	border-bottom: 1px solid transparent;
+	transition: color 0.3s, border 0.3s;
+	margin: 0 0 -3px;
+}
+
+.url:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, .7);
+	color: rgba(255, 255, 255, .7);
+	transition-delay: .1s;
+}

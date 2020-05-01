@@ -1,0 +1,22 @@
+.emblems__title {
+	font-weight: 900;
+	font-size: 2.62em;
+	line-height: 1.1;
+	max-width: 443px;
+	margin: 0 0 72px;
+	padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+	.emblems__title {
+		width: 94%;
+		display: flex;
+		justify-content: flex-start;
+	}
+}
+@media screen and (max-width: 425px) {
+	.emblems__title {
+		font-size: 1.6em;
+		text-align: center;
+	}
+}

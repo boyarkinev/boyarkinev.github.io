@@ -1,0 +1,36 @@
+.place__pic {
+    width: calc((100% - 40px)/2);
+	object-fit: cover;
+	margin: 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+	.place__pic {
+		width: calc((100% - 28px)/2);
+		object-fit: contain;
+		object-position: top;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.place__pic {
+		width: calc((100% - 28px)/2);
+		object-fit: contain;
+		object-position: top;
+	}
+}
+
+@media screen and (max-width: 596px) {
+	.place__pic {
+		width: 100%;
+		margin-bottom: 24px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.place__pic {
+		width: 100%;
+		margin-bottom: 24px;
+	}
+}

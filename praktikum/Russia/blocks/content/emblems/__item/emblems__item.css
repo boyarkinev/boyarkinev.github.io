@@ -1,0 +1,14 @@
+.emblems__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	width: 100%;
+    max-width: 190px;
+}
+
+@media screen and (max-width: 425px) {
+	.emblems__item {
+		margin: 0 auto 48px;
+	}
+}

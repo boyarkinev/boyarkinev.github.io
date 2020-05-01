@@ -1,0 +1,15 @@
+.footer__navigation-item {
+    	margin-right: 18px;
+}
+/*
+
+.footer__navigation-item:last-child {
+    margin-right: 0;
+}
+*/
+
+@media screen and (max-width: 425px) {
+	.footer__navigation-item {
+		margin-bottom: 32px;
+	}
+}
