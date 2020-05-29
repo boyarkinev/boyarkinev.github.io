@@ -5,5 +5,6 @@ HTML5, CSS3
 ### Реализация:
 * Flexbox, grid layout
 * Анимация статичных объектов через keyframes
+* БЭМ-именование классов
 ### Ссылка для просмотра
 https://boyarkinev.github.io/praktikum/learn2learn/
